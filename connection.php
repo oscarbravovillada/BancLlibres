@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // o tu usuario MySQL
-$password = "";     // tu contraseña MySQL
+$username = "root"; 
+$password = "";     
 $dbname = "banc_libres";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
