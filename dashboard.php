@@ -1,6 +1,4 @@
-<!-- ========================= -->
-<!-- dashboard.php -->
-<!-- ========================= -->
+
 <?php
 session_start();
 include 'db/connection.php';
@@ -88,7 +86,7 @@ $devoluciones_count = $conn->query("SELECT COUNT(*) as total FROM historial WHER
     <a href="libros.php">Libros</a>
     <a href="prestamos.php">Préstamos</a>
     <a href="devoluciones.php">Devoluciones</a>
-    <a href="login.php">Cerrar sesión</a>
+    <a href="logout.php">Cerrar sesión</a>
 </div>
 
 <div class="main">
