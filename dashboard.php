@@ -8,7 +8,7 @@ if(!isset($_SESSION['username'])){
     exit();
 }
 
-// Consultas para estadísticas
+
 $alumnos_count = $conn->query("SELECT COUNT(*) as total FROM alumnos")->fetch_assoc()['total'];
 $libros_count = $conn->query("SELECT SUM(cantidad) as total FROM libros")->fetch_assoc()['total'];
 $prestamos_count = $conn->query("SELECT COUNT(*) as total FROM prestamos WHERE estado='activo'")->fetch_assoc()['total'];
